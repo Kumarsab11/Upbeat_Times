@@ -10,16 +10,23 @@
     {
       "email": "pradoshp91@gmail.com",
       "name": "pradosh",
-      "mob": "8345679879",
-      "password": "pradosh@123",
-      "id": "MMKPRZ_"
-    },
-    {
-      "email": "pradoshp91@gmail.com",
-      "name": "pradosh",
       "mob": "9086754567",
       "password": "123456",
       "id": "F0tXHte"
+    },
+    {
+      "email": "raja81@gmail.com",
+      "name": "raja",
+      "mob": "9086754567",
+      "password": "12345678",
+      "id": "ddqIyQ9"
+    },
+    {
+      "email": "pp21@gmail.com",
+      "name": "prahallad",
+      "mob": "9086754567",
+      "password": "123",
+      "id": "9zjz-f0"
     }
   ]
 }

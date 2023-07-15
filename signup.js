@@ -4,7 +4,8 @@ const mob = document.getElementById("mob");
 const pass = document.getElementById("password");
 const button = document.getElementById("signup");
 
-button.addEventListener("click", () => {
+button.addEventListener("click", (e) => {
+  e.preventDefault();
   const dataobj = {
     email: email.value,
     name: uname.value,
@@ -21,5 +22,6 @@ button.addEventListener("click", () => {
     .then((res) => res.json())
     .then((data) => {
       alert("Account created successfully");
+      window.location.href = "./signin.html";
     });
 });
