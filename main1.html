@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News Headlines, English News,Today Headlines, Top Stories | ...
+            hindustantimes.com
+        </title>
+    </head>
+    <head>
+        <link rel="stylesheet" href="./main1.css"/>
+    </head>
+    <body>
+        <div class="header">
+            <div class="main_header">
+                <div class="right_header">
+                    <div class="right_header_upper">
+                        <ul>
+                            <li>Explore</li>
+                            <li>Search</li>
+                            <div id="location" onclick="getLocation();">location</div>
+                            <script>
+                            var div = document.getElementById("location");
+
+                            function getLocation() {
+                                if (navigator.geolocation) {
+                                navigator.geolocation.getCurrentPosition(showPosition, console.log);
+                                } else {
+                                console.log("The Browser Does not Support Geolocation");
+                                }
+                            }
+
+                            function showPosition(position) {
+                                var lat = position.coords.latitude;
+                                var lon = position.coords.longitude;
+                                alert("The current location is : "+"{"+" "+lat+" "+","+lon+" "+"}");
+                            }
+                            getLocation();
+                            </script>
+                        </body>
+                        </html>
+
+                        </ul>
+                    </div>
+                    <div class="right_header_lower">
+                        <ul>
+                            <li onclick="li()">Date and Time</li>
+                            <script>
+                                function li(){
+                                    var time = new Date();
+                                    var date = time.getDate()+'-'+(time.getMonth()+1)+'-'+time.getFullYear();
+                                    var today= time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
+                                    alert(date + '   ' + time);
+                                }
+                            </script>
+                            <li> </li>
+                            <li>|</li>
+                            <li> </li>
+                            <li>Odisha,India, 32<sup>o</sup>C</li>
+                        </ul>
+                    </div>
+    
+                </div>
+                <div class="logo">
+                    <h1 onclick="window.location.href = './index1.html';">UPBEAT TIMES</h1>
+                </div>
+                <div class="left_header">
+                    <div class="left_header_upper">
+                        <ul>
+                            <li onclick="window.location.href = 'https://poki.com'">Games</li>
+                            <li onclick="window.location.href = 'https://epaper.timesgroup.com/';">E-Paper</li>
+                        </ul>
+                    </div>
+                    <div class="left_header_lower">
+                            <button id="signin" onclick="window.location.href = './signin.html';">Sign In</button>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li onclick="window.location.href = 'https://www.google.com/search?rlz=1C1UEAD_enIN953IN953&sxsrf=AB5stBgTJPK5E6sq-kom7b4x2hHmj2-owg:1689184688237&q=latest+news+articles&tbm=nws&sa=X&ved=2ahUKEwjeqLWq34mAAxVYVmwGHbcjAq0Q0pQJegQIDBAB&biw=1536&bih=746&dpr=1.25';">Latest News</li>
+                    <li onclick="window.location.href = 'https://www.google.com/search?rlz=1C1UEAD_enIN953IN953&sxsrf=AB5stBiLCPUdhPxRXnvPPC3-ux7Q2OsESw:1689184817854&q=cricket&tbm=nws&sa=X&ved=2ahUKEwjEyZzo34mAAxWkcmwGHRyoApoQ0pQJegQIDhAB&biw=1536&bih=746&dpr=1.25';">Cricket</li>
+                    <li onclick="window.location.href = 'https://www.google.com/search?rlz=1C1UEAD_enIN953IN953&sxsrf=AB5stBglpJM8t53cRVcthFAxxaB3S4CHjw:1689185070080&q=education&tbm=nws&sa=X&sqi=2&ved=2ahUKEwjXkr_g4ImAAxXyUGwGHcXVC3gQ0pQJegQIDBAB';">Education</li>
+                    <li onclick="window.location.href = 'https://www.google.com/search?rlz=1C1UEAD_enIN953IN953&sxsrf=AB5stBhGp0Xi8OCfqBZycyzhkHMJvryGzg:1689185093079&q=india&tbm=nws&sa=X&ved=2ahUKEwiL-brr4ImAAxXrTGwGHbEaD04Q0pQJegQICRAB';">India</li>
+                    <li onclick="window.location.href = 'https://www.google.com/search?rlz=1C1UEAD_enIN953IN953&sxsrf=AB5stBiW0tzPZyoT4VupcCSFF9DbD6axVQ:1689185117985&q=entertainment&tbm=nws&sa=X&ved=2ahUKEwjSiKv34ImAAxW6cGwGHf3yA5QQ0pQJegQIDhAB';">Entertainment</li>
+                    <li onclick="window.location,href = 'https://www.google.com/search?rlz=1C1UEAD_enIN953IN953&sxsrf=AB5stBieK_mN_WirHcaF2LBDcS90fb9qQg:1689185172905&q=lifestyle+news&tbm=nws&sa=X&sqi=2&ved=2ahUKEwihjMOR4YmAAxUCb2wGHf3YCVwQ0pQJegQICBAB&biw=1536&bih=746&dpr=1.25';">Lifestyle</li>
+                    <li onclick="window.location.href = 'https://www.google.com/search?rlz=1C1UEAD_enIN953IN953&sxsrf=AB5stBhhu_I7HhQS_KRu1d86FYb80BT_fw:1689185154718&q=astrology&tbm=nws&sa=X&sqi=2&ved=2ahUKEwipkO2I4YmAAxVscmwGHdAZDqEQ0pQJegQIChAB';">Astrology</li>
+                </ul>
+            </nav>
+            </div>
+            <div class="main_body">
+                <div class="main_body_left">
+                    <h3 id="head_left"><b>[[[ LATEST NEWS ]]]</b></h3>
+                    <div>
+                        <h3>CITIES</h3>
+                        <p onclick="window.location.href = 'https://morungexpress.com/assam-escaped-murder-convict-killed-in-police-encounter';">Assam murder convict shot dead 2 months after fleeing from prison</p>
+                        <pre><b>Published 12 mims ago</b></pre>
+                        <hr>
+                    </div>
+                    <div>
+                        <h3>CRICKET</h3>
+                        <p onclick="widow.location.href = 'https://www.timesnownews.com/sports/cricket/india-vs-west-indies-1st-test-weather-report-will-rain-play-spoilsport-in-series-opener-at-dominca-article-101677131';">India vs West Indies weather forecast: Will rain disrupt proceedings as Team India returns after month-long hiatus?</p>
+                        <pre><b>Published 16 mims ago</b></pre>
+                        <hr>
+                    </div>
+                    <div>
+                        <h3>ENTERTAINMENT</h3>
+                        <p onclick="window.location.href = 'https://twitter.com/htshowbiz/status/1678962093498703873';">Wonka trailer: Timothee Chalamet steps into Johnny Depp's shoes to set up greatest chocolate shop ever as young Wonka</p>
+                        <pre><b>Published 17 mims ago</b></pre>
+                        <hr>
+                    </div>
+                    <div>
+                        <h3>India News</h3>
+                        <p onclick="window.location.href = 'https://www.livemint.com/news/india/iskon-bans-amogh-lila-das-for-critisicing-vivekananda-for-eating-fish-all-you-need-to-know-about-controversial-monk-11689136544465.html';">Monk Amogh Lila Das ridicules Swami Vivekananda for eating fish in viral video, gets banned</p>
+                        <pre><b>Published 20 mims ago</b></pre>
+                        <hr>
+                    </div>
+                </div>
+                <div class="main_body_center">
+                    <h3 id="head_left"><b>[[[ TOP NEWS ]]]</b></h3>
+
+                    <h3>Trending News</h3>
+                    <div class="parent">
+                        <div>
+                            <p id="click_news"><a href="https://twitter.com/ANI/status/1678717643313000448?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1678717643313000448%7Ctwgr%5Ebb9cb36c548349c30c9ba4023d8280fc083aa67f%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.hindustantimes.com%2Findia-news%2Fsmoke-in-dibrugarh-kanyakumari-vivek-express-odisha-brahmapur-station-brake-binding-panic-video-101689078849136.html">Passengers jump out of train as smoke fills Vivek Express coach in Odisha</a>!</p>
+                            
+                            <pre><b>Updated 3 hours ago</b></pre>
+                        </div>
+                        <div>
+                            <img src="https://www.hindustantimes.com/ht-img/img/2023/07/11/550x309/Screenshot_2023-07-11_183714_1689080845213_1689080889870.png" alt="" class="child"/>
+                        </div>    
+                    </div>
+                    <div class="parent">
+                        <div>
+                            <p id="click_news"><a href="https://www.hindustantimes.com/india-news/cbi-arrests-3-railway-employeesover-balasore-train-tragedy-101688756830445.html">CBI arrests 3 railway employeesover Balasore train tragedy</a></p>
+                            
+                            <pre><b>Updated 3 hours ago</b></pre>
+                        </div>
+                        <div>
+                            <img src="https://www.hindustantimes.com/ht-img/img/2023/07/07/550x309/Restoration-work-underway-at-the-train-accident-si_1688757721834.jpg" alt="" class="child"/>
+                        </div>    
+                    </div>
+                    <div class="parent">
+                        <div>
+                            <p id="click_news"><a href="https://odishatv.in/news/odisha/odisha-to-provide-financial-assistance-to-poor-st-sc-students-209177">Odisha to provide financial assistance to poor ST, SC students</a></p>
+                            
+                            <pre><b>Updated 2 hours ago</b></pre>
+                        </div>
+                        <div>
+                            <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/recent_photo_1683988731.jpg" alt="" class="child"/>
+                        </div>    
+                    </div>
+                    <div class="parent">
+                        <div>
+                            <p id="click_news"><a href="https://pragativadi.com/odisha-train-tragedy-2-accused-apply-for-bail/">CBI Odisha train tragedy: CBI granted further 4-day remand of 3 accused</a></p>
+                            
+                            <pre><b>Updated 2 hours ago</b></pre>
+                        </div>
+                        <div>
+                            <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1679678600.jpg" alt="" class="child"/>
+                        </div>    
+                    </div>
+                    <div class="parent">
+                        <div>
+                            <p id="click_news"><a href="https://odishatv.in/news/odisha/naveen-has-not-done-his-duty-as-brother-says-odisha-cm-s-cousin-dilip-patnaik-209148" target="_blank">CM Naveen Patnaik's cousin Dilip Naveen has not done his duty as brother, says Odisha CM's cousin Dilip Patnaik</a></p>
+                            
+                            <pre><b>Updated 1 hours ago</b></pre>
+                        </div>
+                        <div>
+                            <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_1/recent_photo_1689066546.webp" alt="" class="child"/>
+                        </div>    
+                    </div>
+                    <pre>
+
+
+
+
+
+                    </pre>
+                </div>
+                <div class="main_body_right">
+                    <p id="ad_id">Advertisement</p>
+                    <p><a href="https://www.nexaexperience.com/invicto?utm_source=ht&utm_medium=fixed&utm_content=road_block"><img src="https://cdn.airtory.com/c2070e4562043130fa9239a98b2170a9_300x250-1100x450Final/300x250-1100x450_Final/300x250.jpg" alt="" class="child"/></a></p>
+                    <hr>
+                    <div>
+                        <p onclick="window.location.href = 'https://mobile.twitter.com/HTSportsNews/status/1678821909843312642';">Wrestlers grapple with layoff effect on return to competition</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p onclick="window.location.href = 'https://eduvoice.in/news/new-forest-bill-must-strike-a-fine-balance/';">New forest bill must strike a fine balance</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p onclick="window.location.href = 'https://eduvoice.in/news/searching-for-a-chips-industry/searching-for-a-chips-industry-2/';">Searching for a chips industry </p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p onclick="window.location.href = 'https://mobile.twitter.com/paranjoygt/status/1679165288225427457';">Bail hearings in Delhi riots cases can be a test for liberty under UAPA</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p onclick="window.location.href = 'https://www.orfonline.org/research/increasing-cooperation-for-sustainable-development/';">In G20, India is pushing for global cooperation</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>
