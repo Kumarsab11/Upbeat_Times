@@ -76,7 +76,7 @@ form.sign-in-form {
   font-weight: 600;
   color: #444;
 }
-.btn {
+#button {
   width: 150px;
   height: 50px;
   border: none;
